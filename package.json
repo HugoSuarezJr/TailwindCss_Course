@@ -4,12 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i src/styles.css -o pubilc/output.css"
+    "build": "tailwindcss -i src/styles.css -o public/output.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugosuarez80/TailwindCss_Course.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "tailwindcss": "^3.0.5"
+  "bugs": {
+    "url": "https://github.com/hugosuarez80/TailwindCss_Course/issues"
+  },
+  "homepage": "https://github.com/hugosuarez80/TailwindCss_Course#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.4"
   }
 }

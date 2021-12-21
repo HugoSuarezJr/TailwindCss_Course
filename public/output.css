@@ -1,10 +1,65 @@
 /* ./your-css-folder/styles.css */
 
-.btn{
-  border-radius: 0.25rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-weight: 700;
+/* @variants hover, focus{
+    .rotate-0{
+        transform: rotate(0deg);
+    }
+}  */
+
+.rotate-0{
+  transform: rotate(0deg);
+}
+
+.rotate-90{
+  transform: rotate(90deg);
+}
+
+@media (min-width: 640px){
+  .sm\:rotate-0{
+    transform: rotate(0deg);
+  }
+
+  .sm\:rotate-90{
+    transform: rotate(90deg);
+  }
+}
+
+@media (min-width: 768px){
+  .md\:rotate-0{
+    transform: rotate(0deg);
+  }
+
+  .md\:rotate-90{
+    transform: rotate(90deg);
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:rotate-0{
+    transform: rotate(0deg);
+  }
+
+  .lg\:rotate-90{
+    transform: rotate(90deg);
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:rotate-0{
+    transform: rotate(0deg);
+  }
+
+  .xl\:rotate-90{
+    transform: rotate(90deg);
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:rotate-0{
+    transform: rotate(0deg);
+  }
+
+  .\32xl\:rotate-90{
+    transform: rotate(90deg);
+  }
 }

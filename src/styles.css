@@ -1,18 +1,7 @@
 /* ./your-css-folder/styles.css */
 
+/* postcss.config.js */
 
-/* @variants hover, focus{
-    .rotate-0{
-        transform: rotate(0deg);
-    }
-}  */
-
-
-@responsive{
-    .rotate-0{
-        transform: rotate(0deg);
-    }
-    .rotate-90{
-        transform: rotate(90deg);
-    }
+.new-btn{
+    @apply sm:scale-1 hover:rotate-1
 }

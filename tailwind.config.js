@@ -11,22 +11,18 @@ module.exports = {
     },
   },
   variants: {
-    extend: {
+  extend: {
     },
   },
   plugins: [
-    plugin(function({addUtilities}){
-      const newUtilities = {
-        ".scale-1" : {
-          transform : 'scale(1)'
-        },
-        '.rotate-1': {
-          transform: 'rotate(1)'
-        }
+    plugin(function({addBase, theme}){
+      const heading = {
+        'h1' : {fontSize : theme('fontSize.2xl')},
+        'h3' : {fontSize : theme('fontSize.xl')},
+        'h6' : {fontSize : theme('fontSize.lg')}
       }
-      addUtilities(newUtilities, {
-        variants:['responsive', 'hover']
-      })
+
+      addBase(heading)
     })
   ],
 }

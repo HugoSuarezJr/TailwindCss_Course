@@ -6,8 +6,13 @@ module.exports = {
   purge: [],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
-    extend: {
+    container: {
+      center: true,
+      padding: '2rem'
     },
+    teal: {
+      color: "#008080"
+    }
   },
   variants: {
   extend: {
